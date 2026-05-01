@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main{
+width: 100%;
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("C:\\Users\\Testimony\\Pictures\\W.TT\\header.jpg");
+background-position: center;
+background-size: cover;
+height: 100vh;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+  animation: rotateLogo 1s ease-out;
+}
+@keyframes rotateLogo {
+  from {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+    transition: 0.5s;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 50px;
+    color: black;
+}
+.content p{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.button{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #f44336;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px 10px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #f44336;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.button:hover span{
+    width: 100%;
+}
+.button:hover{
+    border: none;
+}
