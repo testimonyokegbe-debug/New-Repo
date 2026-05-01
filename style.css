@@ -102,3 +102,68 @@ span{
 .button:hover{
     border: none;
 }
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 90%;
+        padding: 25px 0;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .button {
+        width: 160px;
+        padding: 12px 0;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 140px;
+        font-size: 14px;
+    }
