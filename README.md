@@ -1,2 +1,5 @@
 # New-Repo
-Day one
+Day one.
+current project working on.
+home page done... 
+
